@@ -1,0 +1,25 @@
+.adataim-doboza{
+    position: absolute;
+    height: 55%;
+    width: 50%;
+    font-family: Helvetica;
+    color: #fff;
+    background: rgba(206, 86, 86, 0.68);
+    padding: 30px 0px;
+    margin-left: 17%;
+}
+.adataim-doboza input:focus,.adataim-doboza input:active,.adataim-doboza button:focus,.adataim-doboza button:active{
+    outline:none;
+}
+
+.input-paddings{
+    padding: 5%;
+}
+
+.btn-danger{
+    float: right;
+}
+
+h1{
+    text-align: center;
+}

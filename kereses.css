@@ -1,0 +1,352 @@
+#hatter{
+    background-image: url("upload/hatterlogedin.jpg");
+    background-repeat: round;
+}
+
+/*fooldal magine-bealitas*/
+#main_page_margine {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+/*dropdown style*/
+.dropdown {
+    padding: 2%;
+    float: right;
+}
+
+.btn.btn-default.dropdown-toggle {
+    padding: 13px 30px;
+}
+
+/*kereso-bar elhelyezes*/
+.keres {
+    padding-bottom: 4%
+}
+
+.full_search {
+    background-color: #009688;
+    padding: 2%;
+    opacity: 0.8;
+    margin-bottom: 4%;
+}
+
+.top_row {
+    padding-bottom: 2%;
+}
+
+.varos_keres {
+    padding: 3%;
+    width: 100%;
+}
+
+.penz_keres {
+    padding: 3%;
+    width: 100%;
+}
+
+.middle_row {
+    padding-bottom: 2%;
+}
+
+.keres_button {
+
+    float: right;
+}
+
+/*kereses hirdetesek elhelyezese*/
+#kereses_tabla {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+    background-color: #c7ddef
+}
+
+#kep_rama {
+    width: 200px;
+}
+
+#kep_meretezes {
+    width: 130px;
+    height: 140px;
+}
+
+#kep_meretezes:hover {
+    width: 300px;
+    height: 320px;
+}
+
+#cim_iras_tipus {
+    font-family: Lato, sans-serif !important;
+}
+
+#datum_elhelyezese {
+    width: 222px;
+    valign: botton;
+    text-align: right;
+    padding: 50px;
+}
+
+#datum_elhelyezese_szam {
+    margin: auto;
+}
+
+/**********************/
+
+#vissza_fooldalra {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #2d9ff4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#vissza_fooldalra span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#vissza_fooldalra span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#vissza_fooldalra:hover span {
+    padding-right: 25px;
+}
+
+#vissza_fooldalra:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.login_form_body{
+    margin-top: 15%;
+}
+
+.form_boxing{
+    padding: 4%;
+    border: 2px solid lightgray;
+}
+
+/*************************************/
+
+@media screen and (max-width: 480px) {
+    #kep_rama {
+        display: none;
+    }
+
+    #datum_elhelyezese {
+        display: none;
+    }
+
+    #vissza_fooldalra {
+        width: 30%;
+        font-size: 100%;
+    }
+}
+
+/******************************************************************? */
+
+.hatter_login{
+    padding:0;
+    margin:0;
+    width: auto;
+    height: auto;
+    background-image: url("http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg");
+    background-size: cover;
+
+}
+.vid-container{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+.bgvid.back {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+}
+.inner {
+    position: absolute;
+}
+.inner-container{
+    width:400px;
+    height:400px;
+    position:absolute;
+    top:calc(50vh - 200px);
+    left:calc(50vw - 200px);
+    overflow:hidden;
+}
+.bgvid.inner{
+    top:calc(-50vh + 200px);
+    left:calc(-50vw + 200px);
+    filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+    -webkit-filter:blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter:blur(10px);
+}
+.box{
+    position:absolute;
+    height:100%;
+    width:100%;
+    font-family:Helvetica;
+    color:#fff;
+    background: rgba(183, 183, 183, 0.93);
+    padding:30px 0px;
+}
+.box h1{
+    text-align:center;
+    margin:30px 0;
+    font-size:30px;
+}
+.box input{
+    display:block;
+    width:300px;
+    margin:20px auto;
+    padding:15px;
+    background:rgba(0,0,0,0.2);
+    color:#fff;
+    border:0;
+}
+.box input:focus,.box input:active,.box button:focus,.box button:active{
+    outline:none;
+}
+.box button{
+    background:rgb(22, 33, 72);
+    border:0;
+    color:#fff;
+    padding:10px;
+    font-size:20px;
+    width:330px;
+    margin:20px auto;
+    display:block;
+    cursor:pointer;
+}
+.box button:active{
+    background:#27ae60;
+}
+.box p{
+    font-size:14px;
+    text-align:center;
+}
+.box p span{
+    cursor:pointer;
+    color:#666;
+}
+
+.span_error {
+    color:red
+}
+
+/********************/
+/*Loged in search table*/
+.form_level{
+    margin-top: 11%;
+}
+
+.level{
+    width: 52%;
+    height: 30px;
+}
+
+#felhasznalok{
+    background: #dddddd;
+    border-radius: 25px;
+    padding: 25px;
+    position: fixed;
+    margin-left: 326px;
+    margin-top: 46px;
+    width: inherit;
+    border: #7d7676 1px solid;
+}
+
+#edit_buttons_space{
+    width: 20%;
+}
+
+#form_level{
+    margin-bottom: 14px;
+}
+
+#adataim{
+    margin-bottom: 14px;
+}
+
+#edit_adatok{
+    margin-bottom: 12px;
+}
+
+#edit{
+    margin-top: 11px;
+}
+
+/***  kereses.php oldal */
+
+#kereses_eredmenyek{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+
+
+/****  felhasznalo_adatai.php   */
+
+#felhaszalo_adatai_tabla{
+    border-bottom: 1px solid #f0f0f0;
+    width: 50%;
+    background-color: #c7ddef;
+}
+
+#felhasznalok_kiirasa{
+    padding: 4%;
+}
+
+
+
+/* uzenetek_olvasa.php */
+
+#uzenetek_tabla{
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+#uzenet_cime{
+    background-color: darkcyan;
+    padding: 3%;
+}
+
+#uzenet_szoveg{
+    padding: 11px;
+}
+
+#button_padding{
+    padding: 14px;
+}
+
+#level_kuldes{
+    float: right;
+    background-color: darkcyan;
+}
+
+body{
+    background-image: url("upload/hatterlogedin.jpg");
+    background-repeat: round;
+}

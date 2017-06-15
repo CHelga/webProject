@@ -1,0 +1,350 @@
+ul {
+   
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+	background-color: pink;
+}
+
+li {
+    float: left;
+	
+}
+
+a {
+    display: block;
+    width: 140px;
+    font-size: 15px;
+	color : black;
+	}
+
+a:hover{
+	color: red;
+}
+
+h1{
+	text-align: center;
+}
+
+
+
+#torles{
+	border: 2px solid black;
+    background: #dddddd;
+    width: 150px;
+    border-radius: 25px;
+    margin:50px 0px;
+    padding: 25px;
+    position: fixed; /* or absolute */
+   }
+
+	
+/*#keres {*/
+
+	 /*border: 2px solid black;*/
+    /*padding: 10px 40px; */
+    /*background: #dddddd;*/
+    /*width: 200px;*/
+    /*border-radius: 25px;*/
+	/*margin:50px 40px;*/
+/*}*/
+
+#feltolt{
+ border: 2px solid black;
+    padding: 10px 40px; 
+    background: #dddddd;
+    width: 300px;
+    border-radius: 25px;
+	margin:50px 40px;
+}
+
+
+#felhasznalok{
+	border: 2px solid black;
+    background: #dddddd;
+    width: 150px;
+    border-radius: 25px;
+    margin:50px 190px;
+    padding: 25px;
+    position: fixed; /* or absolute */
+}
+
+/*textarea-nak fekete volalal behuzuk a szelet*/
+#uzenet_irasa{
+border: 2px solid black;
+}
+
+#kuldes{
+	background-color: #B28FB2;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: black;
+    font-family: bold;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+/*login box bealitasa*/
+#login{
+	border: 2px solid white;
+    padding: 20px 40px; 
+    background: #FF6666;
+    width: 320px;
+    border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 20px;
+	border-radius: 25px;
+}
+/*vege*/
+
+/*login es regiszter gombok stilusa*/
+#loginGomb{
+    background-color: red;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: bold;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+#submit:hover {
+    border: none;
+    background:red;
+    box-shadow: 0px 0px 1px #777;
+}
+/*vege*/
+
+/*Kereses form */
+/*#keres{*/
+	/*border: 2px solid white;*/
+    /*padding: 20px 40px; */
+    /*background: #FF6666;*/
+    /*width: 520px;*/
+    /*border-radius: 25px;*/
+	/*text-align: center;*/
+	/*font-weight: bold;*/
+	/*margin-left: 400px;*/
+    /*margin-right: auto;*/
+/*!*	padding: 15px; *!*/
+	/*border-radius: 50px;  */
+/*}*/
+/*vege*/
+
+
+#kereses{
+    background-color: red;
+    border-radius:6px;
+    color: #fff;
+    font-family: bold;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+#submit:hover {
+    border: none;
+    background:red;
+    box-shadow: 0px 0px 1px #777;
+}
+/*vege*/
+
+/*kereses eredmenye (kereses_notLogin.php)*/
+#keresesValasza{
+	background-image: url("h.jpg");
+	background-size: 1400px 750px;		/* háttérkép skálázása */
+	background-attachment: fixed;
+	text-align: center;
+}
+/*adatok keresese utan a Vissza gomb (kereses_notLogin.php) */
+#visszaGomb{
+	 background-color: #3D001F;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: white;
+    font-family: bold;
+    font-size: 25px;
+}
+
+/*regisztracios form (register.php)*/
+#regisztracio{
+	border: 2px solid white;
+    padding: 20px 40px; 
+    background: #FF6666;
+    width: 520px;
+    border-radius: 25px;
+	text-align: center;
+	font-weight: bold;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 15px;
+	border-radius: 25px;
+	font-family: bold;
+	color : #533645;
+}
+
+/*vissza gomb (register.php)*/
+#megsem{
+ background-color: #3D001F;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: white;
+    font-family: bold;
+    font-size: 15px;
+}
+
+/*regisztracios gomb (register.php)*/
+#regisztacioGomb{
+	 background-color: #3D001F;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: white;
+    font-family: bold;
+    font-size: 15px;
+}
+
+/*keresett adatok  haterkep bealitas*/
+#login_kereses_valasz{
+	text-align: center;
+}
+
+/*uzenet kuldes (uzenetkuldes_proba.php)*/
+#uzenet{
+	background-image: url("hater.jpg");
+	background-size: 1400px 700px;		/* háttérkép skálázása */
+	background-attachment: fixed;
+	text-align: center;
+}
+
+/*adat betevese forma (insert_data.php)*/
+#feltolt{
+	border: 2px solid white;
+    padding: 20px 40px; 
+    background:#E68A8A;
+    width: 520px;
+    border-radius: 25px;
+	text-align: center;
+	font-weight: bold;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 15px;
+	border-radius: 25px;
+	font-family: bold;
+	color : #533645;
+	box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.6);
+}
+
+/*mindenkinek az adatai kiirasa (proba_adatok.php)*/
+#form_level{;
+	text-align: center;
+}
+
+/*admin oldalon mindenkinek a hirdetesei */
+#adatok_admin{
+	text-align: center;
+	background-image: url("h.jpg");
+}
+
+/*admin oldalon sajat hirdetesei (felhasznalo_adatai)*/
+#felhasznalo_adatai{
+text-align: center;
+	background-image: url("h.jpg");
+}
+
+/*sajat hirdetes torlese gomb*/
+#delete{
+ background-color: #3D001F;
+    border-radius:6px;
+    color: white;
+    font-family: bold;
+    font-size: 15px;
+}
+
+/*sajat hirdetes modositasa gomb*/
+#edit{
+ background-color: #3D001F;
+    border-radius:6px;
+    color: white;
+    font-family: bold;
+    font-size: 15px;
+}
+	
+/*modositani akarom egy hirdetesemet (edit_proba.php)*/
+#feltolt{
+border: 2px solid white;
+    padding: 20px 40px; 
+    background:#E68A8A;
+    width: 520px;
+    border-radius: 25px;
+	text-align: center;
+	font-weight: bold;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 15px;
+	border-radius: 25px;
+	font-family: bold;
+	color : #533645;
+	box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.6);
+}	
+
+/*hiba uzenet*/
+#uzenet{
+color : red;
+text-align : bold; 
+}
+
+/*body{*/
+	/*background-color : #E89696;*/
+/*}*/
+
+
+
+#ara {
+      width: 55px;
+}
+
+#szobaszam{
+      width: 50px;
+}
+
+#terulet{
+	 width: 50px;
+}
+#szam{
+	width : 50px;
+}
+
+
+#insert{
+  border: 2px solid black;
+    background: #dddddd;
+    width: 800px;
+    border-radius: 25px;
+    margin:50px 0px;
+    padding: 25px;
+    position: fixed;
+    top: 5%;
+    left: 35%;
+}
+
+/*fooldal haterkep bealitas */
+#fo{
+   background-image: url("images.jpg");
+	background-size: 1400px 700px;		/* háttérkép skálázása */
+	background-attachment: fixed;
+	text-align: center;
+	
+}

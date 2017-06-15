@@ -1,0 +1,25 @@
+.logout_button {
+    background-color: transparent;
+    color: #9d9d9d;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: right;
+}
+
+.logout_button:hover {
+    color: white;
+}
+
+.margin_set_login {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+body{
+    background-image: url("upload/hatterlogedin.jpg");
+    background-repeat: round;
+}
+
+
