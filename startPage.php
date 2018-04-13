@@ -28,7 +28,7 @@ if (!loggedin()) { ?>
         </div>
     </div>
     <div class="keres_form">
-        <form id="myForm" action="kereses_notLogin.php" method="POST">
+        <form id="myForm" action="search_if_notLoggedIn.php" method="POST">
             <div class="container-fluid full_search">
                 <div class="row top_row">
                     <div class="col-sm-4">
@@ -73,7 +73,7 @@ if (!loggedin()) { ?>
         </form>
     </div>
     <div>
-        <?php include 'adatok_nembejelntezett.php'; ?>
+        <?php include 'posts.php'; ?>
     </div>
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

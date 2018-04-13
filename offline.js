@@ -29,8 +29,8 @@ function getRequestObject() {
 
 function modositas_lementese() {
     if (navigator.onLine) {
-//        window.location="online_uzenet_kuldes.php";
-        id.open("POST", "online_uzenet_kuldes.php", true);
+//        window.location="send_letter.php";
+        id.open("POST", "send_letter.php", true);
         id.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         var post = "id=" + sid + "&lsajat=" + ssajatid + "&luzenet=" + sluzenet;
         id.send(post);
@@ -55,7 +55,7 @@ function szinkronizalas() {
     var sluzenet = localStorage.getItem("luzenet");
 
     id = getRequestObject();
-    id.open("POST", "uzenetkuldes_connection_proba.php", true);
+    id.open("POST", "offline_send_letter.php", true);
     id.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     var post = "id=" + sid + "&lsajat=" + ssajatid + "&luzenet=" + sluzenet;
     id.send(post);

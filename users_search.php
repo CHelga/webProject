@@ -17,7 +17,7 @@ if (loggedin()) {
     </head>
     <body id="main_page_margine">
     <div class="keres_form">
-        <form id="myForm" action="kereses.php" method="POST">
+        <form id="myForm" action="search_posts.php" method="POST">
             <div class="container-fluid full_search">
                 <div class="row top_row">
                     <div class="col-sm-4">
@@ -62,7 +62,7 @@ if (loggedin()) {
         </form>
     </div>
     <div>
-        <?php include 'proba_adatok.php'; ?>
+        <?php include 'users_all_posts.php'; ?>
     </div>
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

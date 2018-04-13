@@ -30,7 +30,7 @@ $felh = $record['id'];
 
         </td>
         <td>
-            <form id="myForm" action="felhaszno_torles.php" method="POST">
+            <form id="myForm" action="user_delete.php" method="POST">
                 <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh"/>
                 <button type="submit" name="delete" class="btn btn-primary btn-md" id="felhasznalok_torles_gomb">
                     Törlés

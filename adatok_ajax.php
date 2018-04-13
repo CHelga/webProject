@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 require 'core.inc.php';
 require 'connection.php';
 	
@@ -17,3 +17,4 @@ require 'connection.php';
 			echo $surname."|";
 		}
 ?>
+ -->

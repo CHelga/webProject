@@ -36,8 +36,8 @@ if (loggedin()) {
                     <ul class="nav navbar-nav" id="nav">
                         <li><a href="insert_data">Insert New Post</a></li>
                         <li><a href="admin_search">Search</a></li>
-                        <li><a href="felhasznalo_adatai">My Posts</a></li>
-                        <li><a href="felhasznalok">Users</a></li>
+                        <li><a href="user_posts">My Posts</a></li>
+                        <li><a href="users">Users</a></li>
                         <li><a href="mails">Mail</a></li>
                         <li><a href="users_data">Settings</a></li>
                         <button type="submit" class="logout_button" onclick="location.href ='logout.php';">Log Out

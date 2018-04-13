@@ -31,7 +31,7 @@ while ($record = mysqli_fetch_assoc($vizsgal)) {
     <link rel="stylesheet" type="text/css" href="stilus.css">
 </head>
 <body id="uzenet">
-<form id="myForm" enctype="multipart/form-data" action="online_uzenet_kuldes.php" method="POST">
+<form id="myForm" enctype="multipart/form-data" action="online_send_letter.php" method="POST">
     <h1>Kérem irja ide az üzenetet. </h1>
     <div id="uzenetkuldes">
         <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">

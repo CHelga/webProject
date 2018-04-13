@@ -159,14 +159,14 @@ border: 2px solid black;
 }
 /*vege*/
 
-/*kereses eredmenye (kereses_notLogin.php)*/
+/*kereses eredmenye (search_if_notLoggedIn.php)*/
 #keresesValasza{
 	background-image: url("h.jpg");
 	background-size: 1400px 750px;		/* háttérkép skálázása */
 	background-attachment: fixed;
 	text-align: center;
 }
-/*adatok keresese utan a Vissza gomb (kereses_notLogin.php) */
+/*adatok keresese utan a Vissza gomb (search_if_notLoggedIn.php) */
 #visszaGomb{
 	 background-color: #3D001F;
     -moz-border-radius: 5px;

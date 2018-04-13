@@ -53,17 +53,17 @@
                 <td id="edit_buttons_space">
                     <form action="send_letter.php" enctype="multipart/form-data" method="POST" id="form_level">
                         <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh"/>
-                        <button type="submit" name="level"  id="level"  class="btn btn-primary btn-md">Levél küldés</button>
+                        <button type="submit" name="level"  id="level"  class="btn btn-primary btn-md">Send letter </button>
                     </form>
-                    <form action="torles_admin_connection.php" enctype="multipart/form-data" method="POST" id="adataim">
+                    <form action="admin_delete_post.php" enctype="multipart/form-data" method="POST" id="adataim">
                         <input type="hidden" value="<?php echo $hirdetesid; ?>" id="hirdetesid" name="hirdetesid"/>
-                        <button type="submit" name="delete"  id="delete"  class="btn btn-primary btn-md">Törlés</button>
+                        <button type="submit" name="delete"  id="delete"  class="btn btn-primary btn-md">Delete</button>
                     </form>
                     <form action="edit_post.php" enctype="multipart/form-data" method="POST" id="edit_adatok">
                         <input type="hidden" value="<?php echo $hirdetesid; ?>" id="felh" name="felh"/>
-                        <button type="submit" name="edit"  id="edit" class="btn btn-primary btn-md">Modositás</button>
+                        <button type="submit" name="edit"  id="edit" class="btn btn-primary btn-md">Edit Post</button>
                     </form>
-                    <button type="submit" id='edit' onclick="adatok(<?php echo $felh; ?>)"  class="btn btn-primary btn-md"> Adatok</button>
+                    <button type="submit" id='edit' onclick="adatok(<?php echo $felh; ?>)"  class="btn btn-primary btn-md"> Data</button>
                 </td>
             </tr>
             </tbody>
