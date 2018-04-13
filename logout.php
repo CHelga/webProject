@@ -1,6 +1,6 @@
 <?php
 require 'core.inc.php';
 session_destroy();
- header('Location:fooldal.php');
+ header('Location:startPage.php');
 
 ?>

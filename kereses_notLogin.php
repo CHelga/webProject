@@ -1,4 +1,7 @@
-
+<?php 
+    require 'connection.php';
+    require 'core.inc.php';
+?>
 <!DOCTYPE>
 <html>
 <head>
@@ -10,8 +13,6 @@
 <div id="login_kereses_valasz">
     <form id="login_kereses_valasz" method="POST">
         <?php
-        require 'connection.php';
-        require 'core.inc.php';
 
         $varos = $_POST['varos'];
         $max = $_POST['max'];
@@ -48,7 +49,7 @@
             $num_rows = mysqli_num_rows($myData88);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData88)) {
                     $felh = $record->felhasznalo;
@@ -113,7 +114,7 @@
             $num_rows = mysqli_num_rows($myData99);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData99))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -180,7 +181,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -246,7 +247,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -313,7 +314,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -380,7 +381,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -447,7 +448,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -514,7 +515,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -581,7 +582,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -648,7 +649,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -714,7 +715,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -781,7 +782,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {
@@ -847,7 +848,7 @@
             $num_rows = mysqli_num_rows($myData1);        //megszamolom a sorok szamat
             if ($num_rows == 0) {                            // ha 0 , akkor azt jelenti, hogy nincsen olyan hirdetes
                 $_SESSION["error"] = "Nem talaltam ilyen hirdetest.";    // kiiratom, hogy nem talaltam ilyent
-                header('Location:fooldal.php');                            //viszalepek az index oldalra
+                header('Location:startPage.php');                            //viszalepek az index oldalra
             } else {
                 while ($record = mysqli_fetch_object($myData1))            //maskepp kiiratom a talalt hirdeteseket
                 {

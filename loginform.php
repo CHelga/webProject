@@ -44,7 +44,7 @@ $error = '';
                 }
 
                 if (isset($_POST['Mégsem'])) {
-                    header("Location: fooldal.php");
+                    header("Location: startPage.php");
                 }
                 ?>
 

@@ -35,7 +35,7 @@ if (!loggedin()) {
                     //	$query = "INSERT INTO `projekt` VALUES ('','".mysqli_real_escape_string($username)."','".mysqli_real_escape_string($password_hash)."','".mysqli_real_escape_string($firstname)."','".mysqli_real_escape_string($surname)."','".$admin. "')";
                     $query = "INSERT INTO projekt (username, password, firstname, surname, admin) VALUES ('$username', '$password_hash', '$firstname','$surname','$admin')";
                     if ($query_run = mysqli_query($mysqli, $query)) {
-                        header('Location:fooldal.php');
+                        header('Location:startPage.php');
 
                     } else {
                         $error = "Nem sikerult a regisztracio, probalja ujra ";
@@ -48,7 +48,7 @@ if (!loggedin()) {
     }
 
     if (isset($_POST['Mégsem'])) {
-        header("Location: fooldal.php");
+        header("Location: startPage.php");
     }
     ?>
 

@@ -7,7 +7,7 @@ if (loggedin()) {
     <!DOCTYPE html>
     <html id="hatter">
     <head>
-        <title>Oldala</title>
+        <title>House sales</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="fooldal.css">
         <script src="bootstrap/js/jquery.min.js"></script>
@@ -34,13 +34,13 @@ if (loggedin()) {
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" id="nav">
-                        <li><a href="insert_data">Hirdetés feltöltése</a></li>
-                        <li><a href="probasearch">Kerses</a></li>
-                        <li><a href="felhasznalo_adatai">Hirdetéseim</a></li>
-                        <li><a href="felhasznalok">Felhasznalók</a></li>
-                        <li><a href="uzenet_olvasas">Üzeneteim</a></li>
-                        <li><a href="users_data">Adataim</a></li>
-                        <button type="submit" class="logout_button" onclick="location.href ='logout.php';">Logout
+                        <li><a href="insert_data">Insert New Post</a></li>
+                        <li><a href="admin_search">Search</a></li>
+                        <li><a href="felhasznalo_adatai">My Posts</a></li>
+                        <li><a href="felhasznalok">Users</a></li>
+                        <li><a href="mails">Mail</a></li>
+                        <li><a href="users_data">Settings</a></li>
+                        <button type="submit" class="logout_button" onclick="location.href ='logout.php';">Log Out
                         </button>
                     </ul>
                 </div>
@@ -52,6 +52,6 @@ if (loggedin()) {
     </html>
     <?php
 } else {
-    header('Location:fooldal.php');
+    header('Location:startPage.php');
 }
 ?>

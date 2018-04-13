@@ -77,7 +77,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -151,7 +151,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -226,7 +226,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -300,7 +300,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -375,7 +375,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -450,7 +450,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -525,7 +525,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -600,7 +600,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -675,7 +675,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -750,7 +750,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -824,7 +824,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -899,7 +899,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">
@@ -973,7 +973,7 @@
                                 <p id="datum_elhelyezese_szam">
                                     <strong><br><?php echo $record->datum; ?></strong>
                                 </p><br>
-                                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST"
+                                <form action="send_letter.php" enctype="multipart/form-data" method="POST"
                                       id="form_level">
 
                                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh">

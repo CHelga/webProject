@@ -1,3 +1,7 @@
+<?php
+    require 'core.inc.php';
+    require 'connection.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,8 +13,7 @@
 <form id="myForm" enctype="multipart/form-data" method="POST">
     <div id="feltolt">
         <?php
-        require 'core.inc.php';
-        require 'connection.php';
+
 
         $bejelentkezettid = $_SESSION['user_id'];                                    // felhasznalonak az id-ja
         $oldal = "SELECT admin FROM projekt WHERE id=$bejelentkezettid";            // kivalasztjuk az admin-t ahol a felhasznalo id-ja = $bejelentkezettid-val

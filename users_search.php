@@ -71,7 +71,7 @@ if (loggedin()) {
 
     <?php
 } else {
-    header('Location:fooldal.php');
+    header('Location:startPage.php');
     exit();
 }
 ?>

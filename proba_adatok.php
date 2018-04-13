@@ -43,9 +43,9 @@ while ($record = mysqli_fetch_object($myData)) {
                 </p>
             </td>
             <td id="edit_buttons_space">
-                <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST" id="form_level">
+                <form action="send_letter.php" enctype="multipart/form-data" method="POST" id="form_level">
                     <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh"/>
-                    <button type="submit" name="level" id="level" class="btn btn-primary btn-md">Levél küldés</button>
+                    <button type="submit" name="level" id="level" class="btn btn-primary btn-md">Send letter</button>
                 </form>
             </td>
         </tr>

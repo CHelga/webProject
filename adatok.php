@@ -51,7 +51,7 @@
                     </p>
                 </td>
                 <td id="edit_buttons_space">
-                    <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST" id="form_level">
+                    <form action="send_letter.php" enctype="multipart/form-data" method="POST" id="form_level">
                         <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh"/>
                         <button type="submit" name="level"  id="level"  class="btn btn-primary btn-md">Levél küldés</button>
                     </form>
@@ -59,7 +59,7 @@
                         <input type="hidden" value="<?php echo $hirdetesid; ?>" id="hirdetesid" name="hirdetesid"/>
                         <button type="submit" name="delete"  id="delete"  class="btn btn-primary btn-md">Törlés</button>
                     </form>
-                    <form action="edit_proba.php" enctype="multipart/form-data" method="POST" id="edit_adatok">
+                    <form action="edit_post.php" enctype="multipart/form-data" method="POST" id="edit_adatok">
                         <input type="hidden" value="<?php echo $hirdetesid; ?>" id="felh" name="felh"/>
                         <button type="submit" name="edit"  id="edit" class="btn btn-primary btn-md">Modositás</button>
                     </form>

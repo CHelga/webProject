@@ -1,3 +1,8 @@
+<?php
+    require 'core.inc.php';
+    require 'connection.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +13,6 @@
 </head>
 <body>
 <?php
-require 'core.inc.php';
-require 'connection.php';
 
 $bejelentkezettid = $_SESSION['user_id'];
 
@@ -36,7 +39,7 @@ $felh = $record['kuldottid'];
     <br>
     <tr>
         <td id="button_padding">
-        <form action="uzenetkuldes_proba.php" enctype="multipart/form-data" method="POST" id="form_level">
+        <form action="send_letter.php" enctype="multipart/form-data" method="POST" id="form_level">
 
             <input type="hidden" value=" <?php echo $felh; ?>" id="felh" name="felh"/>
             <button type="submit" name="level" class="btn btn-primary btn-md" id="level_kuldes"> Válaszolás</button>

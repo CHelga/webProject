@@ -221,7 +221,7 @@ border: 2px solid black;
 	text-align: center;
 }
 
-/*uzenet kuldes (uzenetkuldes_proba.php)*/
+/*uzenet kuldes (send_letter.php)*/
 #uzenet{
 	background-image: url("hater.jpg");
 	background-size: 1400px 700px;		/* háttérkép skálázása */
@@ -247,7 +247,7 @@ border: 2px solid black;
 	box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.6);
 }
 
-/*mindenkinek az adatai kiirasa (proba_adatok.php)*/
+/*mindenkinek az adatai kiirasa (proba_users_data.php)*/
 #form_level{;
 	text-align: center;
 }
@@ -282,7 +282,7 @@ text-align: center;
     font-size: 15px;
 }
 	
-/*modositani akarom egy hirdetesemet (edit_proba.php)*/
+/*modositani akarom egy hirdetesemet (edit_post.php)*/
 #feltolt{
 border: 2px solid white;
     padding: 20px 40px; 

@@ -29,16 +29,16 @@ if (loggedin()) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Hirdetesek </a>
+                    <a class="navbar-brand" href="#">Posts </a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" id="nav">
-                        <li><a href="insert_data">Hirdetés feltöltése</a></li>
-                        <li><a href="users_search">Kerses</a></li>
-                        <li><a href="felhasznalo_adatai">Hirdetéseim</a></li>
-                        <li><a href="uzenet_olvasas">Üzeneteim</a></li>
-                        <li><a href="users_data">Adataim</a></li>
-                        <button type="submit" class="logout_button" onclick="location.href ='logout.php';"  >Logout</button>
+                        <li><a href="insert_data">Insert New Post</a></li>
+                        <li><a href="users_search">Search</a></li>
+                        <li><a href="user_posts">My Posts</a></li>
+                        <li><a href="mails">Mail</a></li>
+                        <li><a href="users_data">Settings</a></li>
+                        <button type="submit" class="logout_button" onclick="location.href ='logout.php';"  >Log Out</button>
                     </ul>
                 </div>
             </div>
@@ -48,6 +48,6 @@ if (loggedin()) {
     </html>
     <?php
 } else {
-    header('Location:fooldal.php');
+    header('Location:startPage.php');
 }
 ?>

@@ -1,3 +1,7 @@
+<?php
+     require 'core.inc.php';
+    require 'connection.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +14,6 @@
 <div id="felhasznalo_adatai">
 
     <?php
-    require 'core.inc.php';
-    require 'connection.php';
-
 
     $bejelentkezettid = $_SESSION['user_id'];
     $sql = "SELECT * FROM pajax WHERE felhasznalo= $bejelentkezettid";
@@ -47,11 +48,11 @@
                     </p>
                 </td>
                 <td id="edit_buttons_space">
-                    <form action="torles_connection.php" enctype="multipart/form-data" method="POST" id="adataim">
+                    <form action="delete_post.php" enctype="multipart/form-data" method="POST" id="adataim">
                         <input type="hidden" value="<?php echo $felh; ?>" id="felh" name="felh"/>
-                        <button type="submit" name="delete" id="delete" class="btn btn-primary btn-md">Törlés</button>
+                        <button type="submit" name="delete" id="delete" class="btn btn-primary btn-md">Delete</button>
                     </form>
-                    <form action="edit_proba.php" enctype="multipart/form-data" method="POST" id="edit_adatok">
+                    <form action="edit_post.php" enctype="multipart/form-data" method="POST" id="edit_adatok">
                         <input type="hidden" value="<?php echo $felh; ?>" id="felh" name="felh"/>
                         <button type="submit" name="edit" class="btn btn-primary btn-md" id="edit">Modositás</button>
                     </form>
