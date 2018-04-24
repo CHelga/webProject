@@ -5,8 +5,8 @@ require 'connection/connection.php';
 <!DOCTYPE>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="kereses.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/css/kereses.css">
+    <script type="text/javascript" src="js/index.js"></script>
     <meta charset="utf-8"/>
 </head>
 <body>
@@ -59,7 +59,7 @@ if ($varos != null && $max != 0 && $maxar != 0 && $maxszobaszam != 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -126,7 +126,7 @@ if ($varos != null && $max == 0 && $maxar == 0 && $maxszobaszam == 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -192,7 +192,7 @@ if ($varos != null && $max != 0 && $maxar == 0 && $maxszobaszam == 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -258,7 +258,7 @@ if ($varos != null && $max != 0 && $maxar != 0 && $maxszobaszam == 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -324,7 +324,7 @@ if ($varos != null && $max == 0 && $maxar != 0 && $maxszobaszam == 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -390,7 +390,7 @@ if ($varos != null && $max == 0 && $maxar == 0 && $maxszobaszam != 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -456,7 +456,7 @@ if ($varos != null && $max != 0 && $maxar == 0 && $maxszobaszam != 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -523,7 +523,7 @@ if ($varos != null && $max == 0 && $maxar != 0 && $maxszobaszam != 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -589,7 +589,7 @@ if ($varos == null && $max != 0 && $maxar != 0 && $maxszobaszam == 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -655,7 +655,7 @@ if ($varos == null && $max == 0 && $maxar != 0 && $maxszobaszam != 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -721,7 +721,7 @@ if ($max != 0 && $varos == null && $maxar == 0 && $maxszobaszam == 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -787,7 +787,7 @@ if ($varos == null && $max == 0 && $maxar != 0 && $maxszobaszam == 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>
@@ -853,7 +853,7 @@ if ($varos == null && $max == 0 && $maxar == 0 && $maxszobaszam != 0) {
                         <tr>
                             <td id="kep_rama">
                                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 			?>
                             </td>
                             <td>

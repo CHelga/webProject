@@ -3,7 +3,7 @@
 <head>
     <title>Hirdetések</title>
     <meta charset=UTF-8>
-    <link rel="stylesheet" type="text/css" href="kereses.css">
+    <link rel="stylesheet" type="text/css" href="style/css/kereses.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -23,7 +23,7 @@ while ($record = mysqli_fetch_object($myData)) {
         <tr>
             <td id="kep_rama">
                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 	?>
             </td>
             <td>

@@ -15,7 +15,7 @@ echo '
     <!DOCTYPE html>
     <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="useres_data.css">
+        <link rel="stylesheet" type="text/css" href="style/css/useres_data.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     </head>
     <form action="user_data_update.php" method="POST">

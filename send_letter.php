@@ -26,9 +26,9 @@ while ($record = mysqli_fetch_assoc($vizsgal)) {
 <head>
     <title>Üzenet irás </title>
     <meta charset=UTF-8>
-    <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="offline.js"></script>
-    <link rel="stylesheet" type="text/css" href="stilus.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/offline.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/css/stilus.css">
 </head>
 <body id="uzenet">
 <form id="myForm" enctype="multipart/form-data" action="online_send_letter.php" method="POST">

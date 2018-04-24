@@ -10,10 +10,10 @@ if (loggedin()) {
     <head>
         <title>Oldala</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet"  href="fooldal.css">
+        <link rel="stylesheet"  href="style/css/fooldal.css">
         <script src="bootstrap/js/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     </head>
     <body>

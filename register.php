@@ -129,9 +129,9 @@ if (loggedin()) {
         <meta charset="UTF-8">
         <title>Register</title>
          <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="register_style.css" rel="stylesheet" type="text/css">
+        <link href="style/css/register_style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
     </head>
      <body class="hatter_login">
 
@@ -165,7 +165,8 @@ if (loggedin()) {
             </div>
         </div>
     </form>
-
+   <script src="upload/js/jquery.min.js"></script>
+    <script src="upload/js/bootstrap.js"></script>
     </body>
 
     </html>

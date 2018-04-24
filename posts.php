@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="kereses.css">
+    <link rel="stylesheet" type="text/css" href="style/css/kereses.css">
 </head>
 <?php
 
@@ -15,7 +15,7 @@ while ($record = mysqli_fetch_object($myData)) {
         <tr>
             <td id="kep_rama">
                 <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 	?>
             </td>
             <td>

@@ -9,10 +9,10 @@ if (loggedin()) {
     <head>
         <title>House sales</title>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" type="text/css" href="fooldal.css">
+        <link rel="stylesheet" type="text/css" href="style/css/fooldal.css">
         <script src="bootstrap/js/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     </head>
     <body>

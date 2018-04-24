@@ -3,14 +3,14 @@
 <head>
     <title>Hidetések</title>
     <meta charset=UTF-8>
-    <script src="ajax.js" type="text/javascript"></script>
-    <script src="ajax_adatok.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="kereses.css">
+    <script src="js/ajax.js" type="text/javascript"></script>
+    <script src="js/ajax_adatok.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="style/css/kereses.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 <div id="adatok_admin">
-    <div id="felhasznalok">            <!-- ajaxtol kapott valasz kiirasa-->
+    <div id="felhasznalok">            <!-- writte data from ajax query-->
         <span id="user"></span><br>
         <span id="firstname"></span><br>
         <span id="surname"></span><br>
@@ -31,7 +31,7 @@ while ($record = mysqli_fetch_object($myData)) {
             <tr>
                 <td id="kep_rama">
                     <?php
-echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+echo "<img id='kep_meretezes' src='style/uploaded_images/$record->kep'>";
 	?>
                 </td>
                 <td>

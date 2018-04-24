@@ -7,7 +7,7 @@ require 'connection/connection.php';
 <head>
     <title>Hirdetése módosítása</title>
     <meta charset=UTF-8>
-    <link rel="stylesheet" type="text/css" href="stilus.css">
+    <link rel="stylesheet" type="text/css" href="style/css/stilus.css">
 </head>
 <body>
 <form id="myForm" enctype="multipart/form-data" method="POST">

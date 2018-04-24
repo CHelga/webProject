@@ -3,7 +3,7 @@
 <head>
     <title> Felhasználok listája </title>
     <meta charset=UTF-8>
-    <link rel="stylesheet" type="text/css" href="kereses.css">
+    <link rel="stylesheet" type="text/css" href="style/css/kereses.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>

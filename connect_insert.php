@@ -36,11 +36,20 @@ if (empty($cim) || empty($varos) || empty($terulet) || empty($penz) || empty($ar
 	) {
 		if ($_FILES['file']['error'] > 0) {
 			echo "return code : " . $_FILES['file']['name'];
-		} else if (file_exists('upload/' . $_FILES['file']['name'])) {
+		} else if (file_exists('style/uploaded_images/' . $_FILES['file']['name'])) {
 			echo $_FILES['file']['name'] . "Mar letezik! ";
-		} else if (move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $_FILES["file"]["name"])) {
+		} else if (move_uploaded_file($_FILES["file"]["tmp_name"], "style/uploaded_images/" . $_FILES["file"]["name"])) {
 			$part = $_FILES['file']['name'];
 		}
+		//optimazing the image uploading system
+
+		// $image_path = "style/uploaded_images/";
+		// $new_name = time() . uniqid(rand());
+		// $destFile = $image_path . $new_name . '.jpg';
+		// $filename = $_FILES["img"]["tmp_name"];
+		// list($width, $height) = getimagesize($filename);
+		// move_uploaded_file($filename, $destFile);
+
 	} else {
 		$_FILES["file"]["name"] = 'no_image.jpg';
 	}

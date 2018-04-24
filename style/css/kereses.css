@@ -1,5 +1,5 @@
 #hatter{
-    background-image: url("upload/hatterlogedin.jpg");
+    background-image: url("../images/hatterlogedin.jpg");
     background-repeat: round;
 }
 
@@ -347,6 +347,6 @@
 }
 
 body{
-    background-image: url("upload/hatterlogedin.jpg");
+    background-image: url("../images/hatterlogedin.jpg");
     background-repeat: round;
 }

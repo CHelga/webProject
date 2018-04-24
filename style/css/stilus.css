@@ -342,7 +342,7 @@ text-align : bold;
 
 /*fooldal haterkep bealitas */
 #fo{
-   background-image: url("images.jpg");
+   background-image: url("../images/images.jpg");
 	background-size: 1400px 700px;		/* háttérkép skálázása */
 	background-attachment: fixed;
 	text-align: center;
