@@ -1,9 +1,9 @@
 <?php
-require 'core.inc.php';
-require 'connection.php';
+require 'connection/connect_to_session.php';
+require 'connection/connection.php';
 
 if (loggedin()) {
-    ?>
+	?>
     <!DOCTYPE>
     <html>
     <head>
@@ -62,7 +62,7 @@ if (loggedin()) {
         </form>
     </div>
     <div>
-        <?php include 'users_all_posts.php'; ?>
+        <?php include 'users_all_posts.php';?>
     </div>
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -71,7 +71,7 @@ if (loggedin()) {
 
     <?php
 } else {
-    header('Location:startPage.php');
-    exit();
+	header('Location:startPage.php');
+	exit();
 }
 ?>

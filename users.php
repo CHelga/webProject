@@ -10,15 +10,15 @@
 
 <?php
 
-require 'connection.php';
+require 'connection/connection.php';
 
 $sql = "SELECT * FROM projekt";
 $myData = mysqli_query($mysqli, $sql);
 
-while ($record = mysqli_fetch_array($myData)){
-$felh = $record['id'];
+while ($record = mysqli_fetch_array($myData)) {
+	$felh = $record['id'];
 //		echo "surname:   " .$record['surname'] . "<br>";
-?>
+	?>
 <table id="felhaszalo_adatai_tabla">
     <tbody>
     <tr>

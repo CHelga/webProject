@@ -1,9 +1,9 @@
 <?php
-require 'core.inc.php';
-require 'connection.php';
+require 'connection/connect_to_session.php';
+require 'connection/connection.php';
 
 if (loggedin()) {
-    ?>
+	?>
     <!DOCTYPE html>
     <html id="hatter">
     <head>
@@ -30,7 +30,7 @@ if (loggedin()) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Hirdetesek </a>
+                    <a class="navbar-brand" href="#">Posts </a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" id="nav">
@@ -52,6 +52,6 @@ if (loggedin()) {
     </html>
     <?php
 } else {
-    header('Location:startPage.php');
+	header('Location:startPage.php');
 }
 ?>

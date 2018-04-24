@@ -16,23 +16,23 @@
         <span id="surname"></span><br>
     </div>
     <?php
-    require 'connection.php';
+require 'connection/connection.php';
 
-    $sql = "SELECT * FROM pajax";
-    $myData = mysqli_query($mysqli, $sql);
+$sql = "SELECT * FROM pajax";
+$myData = mysqli_query($mysqli, $sql);
 
-    while ($record = mysqli_fetch_object($myData)) {
-        $hirdetesid = $record->id;
-        $felh = $record->felhasznalo;
-        $_POST['felh'] = $felh;
-        ?>
+while ($record = mysqli_fetch_object($myData)) {
+	$hirdetesid = $record->id;
+	$felh = $record->felhasznalo;
+	$_POST['felh'] = $felh;
+	?>
         <table id="kereses_tabla">
             <tbody>
             <tr>
                 <td id="kep_rama">
                     <?php
-                    echo "<img id='kep_meretezes' src='upload/$record->kep'>";
-                    ?>
+echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+	?>
                 </td>
                 <td>
                     <p id="cim_iras_tipus">
@@ -69,9 +69,9 @@
             </tbody>
         </table><br><br>
         <?php
-    }
-    mysqli_close($mysqli);
-    ?>
+}
+mysqli_close($mysqli);
+?>
 </div>
 </body>
 </html>

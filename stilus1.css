@@ -1,12 +1,13 @@
-ody{
+body{
     padding:0;
     margin:0;
     width: auto;
     height: auto;
-    background-image: url("http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg");
+    background: url("http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg") !important;
     background-size: cover;
 
 }
+
 .vid-container{
     position:relative;
     height:100vh;

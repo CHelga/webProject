@@ -1,8 +1,8 @@
 <?php
-require 'core.inc.php';
-require 'connection.php';
+require 'connection/connect_to_session.php';
+require 'connection/connection.php';
 
-if (!loggedin()) { ?>
+if (!loggedin()) {?>
     <!DOCTYPE>
     <html>
     <head>
@@ -73,7 +73,7 @@ if (!loggedin()) { ?>
         </form>
     </div>
     <div>
-        <?php include 'posts.php'; ?>
+        <?php include 'posts.php';?>
     </div>
     <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -82,13 +82,13 @@ if (!loggedin()) { ?>
 
     <?php
 } else {
-    $admin_e = $_SESSION['admin'];
-    if ($admin_e != 0) {
-        header('Location:admin.php');
-        exit();
-    } else {
-        header('Location:index.php');
-        exit();
-    }
+	$admin_e = $_SESSION['admin'];
+	if ($admin_e != 0) {
+		header('Location:admin.php');
+		exit();
+	} else {
+		header('Location:index.php');
+		exit();
+	}
 }
 ?>

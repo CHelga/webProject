@@ -1,6 +1,6 @@
 <?php
-     require 'core.inc.php';
-    require 'connection.php';
+require 'connection/connect_to_session.php';
+require 'connection/connection.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,20 +15,20 @@
 
     <?php
 
-    $bejelentkezettid = $_SESSION['user_id'];
-    $sql = "SELECT * FROM pajax WHERE felhasznalo= $bejelentkezettid";
-    $myData = mysqli_query($mysqli, $sql);
+$bejelentkezettid = $_SESSION['user_id'];
+$sql = "SELECT * FROM pajax WHERE felhasznalo= $bejelentkezettid";
+$myData = mysqli_query($mysqli, $sql);
 
-    while ($record = mysqli_fetch_object($myData)) {
-        $felh = $record->id;                                        //a hiretesnek az id-ja
-        ?>
+while ($record = mysqli_fetch_object($myData)) {
+	$felh = $record->id; //a hiretesnek az id-ja
+	?>
         <table id="kereses_tabla">
             <tbody>
             <tr>
                 <td id="kep_rama">
                     <?php
-                    echo "<img id='kep_meretezes' src='upload/$record->kep'>";
-                    ?>
+echo "<img id='kep_meretezes' src='upload/$record->kep'>";
+	?>
                 </td>
 
                 <td>
@@ -61,10 +61,10 @@
             </tbody>
         </table><br><br>
         <?php
-    }
+}
 
-    mysqli_close($mysqli);
-    ?>
+mysqli_close($mysqli);
+?>
 </div>
 </body>
 </html>

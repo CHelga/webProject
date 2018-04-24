@@ -1,5 +1,5 @@
 <?php
-require 'core.inc.php';
+require 'connection/connect_to_session.php';
 require 'rb.php';
 
 R::setup('mysql:host=localhost;dbname=projekt', 'root', '');
@@ -34,12 +34,12 @@ echo '
                          <div class="form-group">
                               <label for="usr">Becenév:</label>
                                 <input type="text" class="form-control" name="surname" id="surname" value="' . $ob->surname . '"  onchange="modositva()" />
-                         </div>                   
+                         </div>
                         <div>
                             <button type="submit" class="btn btn-danger">Feltöltés</button>
                         </div>
                    </div>
-        
+
     </form>
     <script src="upload/js/jquery.min.js"></script>
     <script src="upload/js/bootstrap.min.js"></script>

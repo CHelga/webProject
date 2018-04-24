@@ -1,6 +1,6 @@
 <?php
-    require 'core.inc.php';
-    require 'connection.php';
+require 'connection/connect_to_session.php';
+require 'connection/connection.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,10 +19,9 @@ $bejelentkezettid = $_SESSION['user_id'];
 $sql = "SELECT * FROM uzenetek WHERE kapottid= $bejelentkezettid";
 $myData = mysqli_query($mysqli, $sql);
 
-while ($record = mysqli_fetch_array($myData))
-{
-$felh = $record['kuldottid'];
-?>
+while ($record = mysqli_fetch_array($myData)) {
+	$felh = $record['kuldottid'];
+	?>
 <table id="uzenetek_tabla">
     <tbody>
     <tr >

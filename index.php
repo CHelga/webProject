@@ -1,10 +1,10 @@
 <?php
-require 'core.inc.php';
-require 'connection.php';
+require 'connection/connect_to_session.php';
+require 'connection/connection.php';
 
 if (loggedin()) {
-    $id = $_SESSION['user_id'];
-    ?>
+	$id = $_SESSION['user_id'];
+	?>
     <!DOCTYPE html>
     <html>
     <head>
@@ -48,6 +48,6 @@ if (loggedin()) {
     </html>
     <?php
 } else {
-    header('Location:startPage.php');
+	header('Location:startPage.php');
 }
 ?>

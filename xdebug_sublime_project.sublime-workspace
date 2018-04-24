@@ -1,0 +1,824 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"err",
+				"error_log"
+			],
+			[
+				"ad",
+				"admin_szam"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"connect",
+				"connection"
+			],
+			[
+				"bac",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "loginform.php",
+			"settings":
+			{
+				"buffer_size": 4485,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "register_to_switch.php",
+			"settings":
+			{
+				"buffer_size": 5021,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "xdebug_sublime_project.sublime-project",
+			"settings":
+			{
+				"buffer_size": 192,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> C:\\xampp\\htdocs\\WebProject\\register_to_switch.php\n\t|+| 56\n",
+			"settings":
+			{
+				"buffer_size": 61,
+				"line_ending": "Windows",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 380.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ph",
+				"phpfmt: format now"
+			],
+			[
+				"PackageControl:Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"PakageControl",
+				"Package Control: Install Package"
+			],
+			[
+				"pak",
+				"Install Package Control"
+			]
+		],
+		"width": 434.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/WebProject"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/WebProject/xdebug_sublime_project.sublime-project",
+		"/C/xampp/htdocs/WebProject/startPage.php",
+		"/C/Users/Helga/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/C/xampp/htdocs/WebProject/loginform.php",
+		"/C/Users/Helga/AppData/Roaming/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/C/xampp/htdocs/WebPage/Server/Database/connect.php",
+		"/C/Users/Helga/AppData/Roaming/Sublime Text 3/Packages/phpfmt/phpfmt.sublime-settings",
+		"/C/Users/Helga/AppData/Roaming/Sublime Text 3/Packages/User/Default.sublime-keymap",
+		"/C/Users/Helga/AppData/Roaming/Sublime Text 3/Packages/phpfmt/Default.sublime-keymap",
+		"/C/Users/Helga/AppData/Roaming/Sublime Text 3/Packages/User/phpfmt.sublime-settings",
+		"/C/xampp/htdocs/WebPage/register.php",
+		"/C/xampp/htdocs/WebProject/register.php",
+		"/C/xampp/htdocs/WebProject/admin.php",
+		"/E/LABOR/JavaEE/pom.xml",
+		"/C/xampp/htdocs/WebProject/send_letter.php",
+		"/C/xampp/htdocs/WebProject/offline.js",
+		"/C/xampp/htdocs/WebProject/.idea/workspace.xml",
+		"/C/xampp/htdocs/WebProject/search_if_notLoggedIn.php",
+		"/C/xampp/htdocs/WebProject/online_send_letter.php",
+		"/C/xampp/htdocs/WebProject/stilus.css",
+		"/C/xampp/htdocs/WebProject/users.php",
+		"/C/xampp/htdocs/WebProject/ajax.js",
+		"/C/xampp/htdocs/WebProject/admin_all_posts.php",
+		"/C/xampp/htdocs/WebProject/admin_delete_post.php",
+		"/C/xampp/htdocs/WebProject/adatok_ajax.php",
+		"/C/xampp/htdocs/WebProject/admin_search.php",
+		"/C/xampp/htdocs/WebProject/users_search.php",
+		"/C/xampp/htdocs/WebProject/index.php",
+		"/C/xampp/htdocs/WebProject/search_posts.php",
+		"/C/xampp/htdocs/WebProject/proba_adatok.php",
+		"/C/xampp/htdocs/WebProject/adatok.php",
+		"/C/xampp/htdocs/WebProject/kereses.css",
+		"/C/xampp/htdocs/WebProject/users_data.php",
+		"/C/xampp/htdocs/WebProject/probasearch.php",
+		"/C/xampp/htdocs/WebProject/felhasznalok.php",
+		"/C/xampp/htdocs/WebProject/user_posts.php",
+		"/C/xampp/htdocs/WebProject/edit_post.php",
+		"/C/xampp/htdocs/WebProject/delete_post.php",
+		"/C/xampp/htdocs/WebProject/kereses.php",
+		"/C/xampp/htdocs/WebProject/mails.php",
+		"/C/xampp/htdocs/WebProject/index.js",
+		"/C/xampp/htdocs/WebProject/fooldal.css",
+		"/C/xampp/htdocs/WebProject/kereses_notLogin.php",
+		"/C/xampp/htdocs/WebProject/uzenetkuldes_proba.php",
+		"/C/xampp/htdocs/WebProject/logout.php",
+		"/C/xampp/htdocs/WebProject/login_connection.php",
+		"/C/xampp/htdocs/WebProject/stilus1.css",
+		"/C/xampp/htdocs/WebProject/rb.php",
+		"/C/xampp/htdocs/WebProject/connection.php",
+		"/C/xampp/htdocs/WebProject/felhasznalo_adatai.php",
+		"/C/xampp/htdocs/WebProject/edit_proba.php",
+		"/C/xampp/htdocs/WebProject/core.inc.php",
+		"/C/xampp/htdocs/WebProject/user_data_update.php",
+		"/C/xampp/htdocs/WebProject/uzenet_olvasas.php",
+		"/C/xampp/htdocs/Example1/resources/assets/sass/app.scss",
+		"/C/xampp/htdocs/Example1/resources/views/newBlogLayouts/master.blade.php",
+		"/C/xampp/htdocs/Example1/public/css/blog.css",
+		"/C/xampp/htdocs/Example1/public/css/app.css",
+		"/C/xampp/htdocs/Example1/public/css/newblog.css",
+		"/C/xampp/htdocs/Example1/resources/views/newBlog/create.blade.php",
+		"/E/LABOR/Enterprise-project/pom.xml",
+		"/E/Web/AngularJS/min.html"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "loginform.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								365,
+								365
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "register_to_switch.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5021,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1478,
+								1478
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 690.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "xdebug_sublime_project.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 61,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "xdebug_sublime_project.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"x",
+				"xdebug_sublime_project.sublime-project"
+			],
+			[
+				"regi",
+				"register_to_switch.php"
+			],
+			[
+				"xde",
+				"xdebug_sublime_project.sublime-project"
+			],
+			[
+				"start",
+				"startPage.php"
+			],
+			[
+				"login",
+				"loginform.php"
+			],
+			[
+				"log",
+				"loginform.php"
+			],
+			[
+				"lo",
+				"loginform.php"
+			],
+			[
+				"reg",
+				"register.php"
+			],
+			[
+				"a",
+				"admin.php"
+			],
+			[
+				"strat",
+				"startPage.php"
+			],
+			[
+				"sen",
+				"send_letter.php"
+			],
+			[
+				"offl",
+				"offline.js"
+			],
+			[
+				"send_",
+				"send_letter.php"
+			],
+			[
+				"users",
+				"users.php"
+			],
+			[
+				"admin",
+				"admin.php"
+			],
+			[
+				"posts.php",
+				"posts.php"
+			],
+			[
+				"star",
+				"startPage.php"
+			],
+			[
+				"torles_admin_connection",
+				"torles_admin_connection.php"
+			],
+			[
+				"ada",
+				"admin_all_posts.php"
+			],
+			[
+				"us",
+				"users_search.php"
+			],
+			[
+				"in",
+				"index.php"
+			],
+			[
+				"admin_",
+				"admin_search.php"
+			],
+			[
+				"proba",
+				"proba_adatok.php"
+			],
+			[
+				"user",
+				"users_search.php"
+			],
+			[
+				"use",
+				"users_search.php"
+			],
+			[
+				"sear",
+				"search_posts.php"
+			],
+			[
+				"proba_",
+				"proba_adatok.php"
+			],
+			[
+				"send",
+				"send_letter.php"
+			],
+			[
+				"sea",
+				"search_posts.php"
+			],
+			[
+				"kere",
+				"kereses.php"
+			],
+			[
+				"users_da",
+				"users_data.php"
+			],
+			[
+				"adatok",
+				"adatok.php"
+			],
+			[
+				"proba_a",
+				"proba_adatok.php"
+			],
+			[
+				"edit",
+				"edit_proba.php"
+			],
+			[
+				"to",
+				"torles_connection.php"
+			],
+			[
+				"ad",
+				"adatok.php"
+			],
+			[
+				"uz",
+				"uzenetkuldes_proba.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"keres",
+				"kereses_notLogin.php"
+			],
+			[
+				"uzene",
+				"uzenetkuldes_proba.php"
+			],
+			[
+				"fool",
+				"fooldal.css"
+			],
+			[
+				"logou",
+				"logout.php"
+			],
+			[
+				"felha",
+				"felhasznalo_adatai.php"
+			],
+			[
+				"ind",
+				"index.php"
+			],
+			[
+				"uzen",
+				"uzenet_olvasas.php"
+			],
+			[
+				"conn",
+				"connection.php"
+			],
+			[
+				"cor",
+				"core.inc.php"
+			],
+			[
+				"core",
+				"core.inc.php"
+			],
+			[
+				"felh",
+				"felhasznalo_adatai.php"
+			],
+			[
+				"update",
+				"user_data_update.php"
+			],
+			[
+				"regis",
+				"register.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"restore_index":
+			{
+				"104":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"89":
+				{
+					"group": 0,
+					"index": 0
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						2,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.937106918239,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 165.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

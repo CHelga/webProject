@@ -1,23 +1,23 @@
 <?php
 
-require 'core.inc.php';
-require 'connection.php';
+require 'connection/connect_to_session.php';
+require 'connection/connection.php';
 
-$felhasznalo = $_SESSION['user_id'];        //sajat id-m
+$felhasznalo = $_SESSION['user_id']; //sajat id-m
 $admine = $_SESSION['admin'];
 //felhaszalo ID = felh
-$felh = $_POST['felh'];         //a felhasznaloID-ja akinek akarom kuldeni az uzenetet (akie a hirdetes)
+$felh = $_POST['felh']; //a felhasznaloID-ja akinek akarom kuldeni az uzenetet (akie a hirdetes)
 
 //osszehasonlitjuk a felhasznalo id-ját a küldött id-val
 if ($felhasznalo == $felh) {
-    $_SESSION["error"] = "Ez az ön hirdetése. Saját magának nem küldhet levelet .";
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
+	$_SESSION["error"] = "Ez az ön hirdetése. Saját magának nem küldhet levelet .";
+	header('Location: ' . $_SERVER['HTTP_REFERER']);
 }
 
-$oldal = "SELECT admin FROM projekt WHERE id=$felhasznalo";    // kivalasztjuk az admin-t ahol a felhasznalo id-ja = $felhasznalo-val
+$oldal = "SELECT admin FROM projekt WHERE id=$felhasznalo"; // kivalasztjuk az admin-t ahol a felhasznalo id-ja = $felhasznalo-val
 $vizsgal = mysqli_query($mysqli, $oldal);
 while ($record = mysqli_fetch_assoc($vizsgal)) {
-    $admin = $record['admin'];                        //kimentjuk az $admin -ba azt,hogy admin-e vagy nem
+	$admin = $record['admin']; //kimentjuk az $admin -ba azt,hogy admin-e vagy nem
 }
 ?>
 
@@ -44,5 +44,4 @@ while ($record = mysqli_fetch_assoc($vizsgal)) {
     </div>
 </form>
 </body>
-</html>	
-	
+</html>

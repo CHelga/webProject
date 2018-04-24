@@ -1,103 +1,174 @@
 <?php
-require 'core.inc.php';
-require 'connection.php';
+require 'connection/connect_to_session.php';
+if (loggedin()) {
+	$admin_e = $_SESSION['admin'];
+	if ($admin_e != 0) {
+		header('Location:admin.php');
+		exit();
+	} else {
+		header('Location:index.php');
+		exit();
+	}
+} else if (!loggedin()) {
 
-$error = '';
-if (!loggedin()) {
-    if (
-        isset($_POST['username']) &&
-        isset($_POST['password']) &&
-        isset($_POST['password_again']) &&
-        isset($_POST['firstname']) &&
-        isset($_POST['surname'])
-    ) {
+	require 'connection/connection.php';
 
-        $username = mysqli_real_escape_string($mysqli, $_POST['username']);
-        $password = mysqli_real_escape_string($mysqli, $_POST['password']);
-        $password_again = mysqli_real_escape_string($mysqli, $_POST['password_again']);
-        $password_hash = md5($password);
-        $firstname = mysqli_real_escape_string($mysqli, $_POST['firstname']);
-        $surname = mysqli_real_escape_string($mysqli, $_POST['surname']);
-        $admin = 0;
+	$unameErr = $passwordErr = $password2Err = $fnameErr = $surnameErr = "";
+	$uname = $password = $password2 = $fname = $surname = "";
+// when first accessing the page to avoid empty insert, if we processed the data then it will be true
+	$washere = false;
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        if (!empty($username) && !empty($password) && !empty($password_again) && !empty($firstname) && !empty($surname)) {
-            if ($password != $password_again) {
-                $error = "A passwordok nem talalnak";
-            } else {
-                //megvizsgaljuk ha a username letezik mar az adatbazisban
-                $query = "SELECT `username` FROM `projekt` WHERE `username` = '$username' ";
-                $query_run = mysqli_query($mysqli, $query);
+		// Validate username
+		if (empty(trim($_POST["uname"]))) {
+			$unameErr = "Please enter a username.";
+		} else {
+			// Prepare a select statement
+			$sql = "SELECT id FROM projekt WHERE username = ?";
 
-                if (mysqli_num_rows($query_run) == 1) {
-                    $error = "A felhasználónév " . $username . "már létezik.";
-                } else {
-                    //beszurjuk az uj felhasznalo ertekeit
-                    //	$query = "INSERT INTO `projekt` VALUES ('','".mysqli_real_escape_string($username)."','".mysqli_real_escape_string($password_hash)."','".mysqli_real_escape_string($firstname)."','".mysqli_real_escape_string($surname)."','".$admin. "')";
-                    $query = "INSERT INTO projekt (username, password, firstname, surname, admin) VALUES ('$username', '$password_hash', '$firstname','$surname','$admin')";
-                    if ($query_run = mysqli_query($mysqli, $query)) {
-                        header('Location:startPage.php');
+			if ($stmt = mysqli_prepare($mysqli, $sql) or die(mysqli_error($mysqli))) {
+				// Bind variables to the prepared statement as parameters
+				mysqli_stmt_bind_param($stmt, "s", $param_username);
 
-                    } else {
-                        $error = "Nem sikerult a regisztracio, probalja ujra ";
-                    }
-                }
-            }
-        } else {
-            $error = "Az egesz helyet tolcse ki! ";
-        }
-    }
+				// Set parameters
+				$param_username = trim($_POST["uname"]);
 
-    if (isset($_POST['Mégsem'])) {
-        header("Location: startPage.php");
-    }
-    ?>
+				// Attempt to execute the prepared statement
+				if (mysqli_stmt_execute($stmt)) {
+					/* store result */
+					mysqli_stmt_store_result($stmt);
 
+					if (mysqli_stmt_num_rows($stmt) == 1) {
+						$unameErr = "This username is already taken.";
+					} else {
+						$uname = trim($_POST["uname"]);
+					}
+				} else {
+					echo "Oops! Something went wrong. Please try again later.";
+				}
+			}
+
+			// Close statement
+			mysqli_stmt_close($stmt);
+		}
+
+		// Validate password
+		if (empty(trim($_POST['password']))) {
+			$passwordErr = "Please enter a password.";
+		} elseif (strlen(trim($_POST['password'])) < 5) {
+			$passwordErr = "Password must have atleast 5 characters.";
+		} else {
+			$password = trim($_POST['password']);
+		}
+
+		if (empty(trim($_POST["password2"]))) {
+			$password2Err = "Password is required";
+		} else {
+			$password2 = trim($_POST["password2"]);
+			if ($password != $password2) {
+				$password2Err = "The passwords does not match.";
+			}
+		}
+
+		if (empty(trim($_POST["fname"]))) {
+			$fnameErr = "Fist name is required";
+		} else {
+			$fname = trim($_POST["fname"]);
+			if (!preg_match("/^[a-zA-Z ]*$/", $fname)) {
+				$fnameErr = "Only letters and white space allowed";
+			}
+		}
+
+		if (empty(trim($_POST["surname"]))) {
+			$surnameErr = "Last name is required";
+		} else {
+			$surname = trim($_POST["surname"]);
+			if (!preg_match("/^[a-zA-Z ]*$/", $surname)) {
+				$surnameErr = "Only letters and white space allowed";
+			}
+		}
+		// Check input errors before inserting in database
+		if (empty($unameErr) && empty($passwordErr) && empty($password2Err) && empty($fnameErr) && empty($surnameErr)) {
+
+			// Prepare an insert statement
+			$sql = "INSERT INTO projekt (username, password, firstname, surname, admin) VALUES (?, ?, ?, ?, ?)";
+
+			if ($stmt = mysqli_prepare($mysqli, $sql) or die(mysqli_error($mysqli))) {
+				// Bind variables to the prepared statement as parameters
+				mysqli_stmt_bind_param($stmt, "sssss", $param_username, $param_password, $param_fname, $param_surname, $param_admin);
+
+				// Set parameters
+				$param_username = $uname;
+				$param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+				$param_fname = $fname;
+				$param_surname = $surname;
+				$param_admin = 0;
+
+				// Attempt to execute the prepared statement
+				if (mysqli_stmt_execute($stmt)) {
+					// Redirect to the start page
+					header('Location: startPage.php');
+					exit;
+				} else {
+					echo "Something went wrong. Please try again later.";
+				}
+			}
+
+			// Close statement
+			mysqli_stmt_close($stmt);
+		}
+
+		// Close connection
+		mysqli_close($mysqli);
+	}
+
+	?>
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Register</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="register_style.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <script type="text/javascript" src="index.js"></script>
     </head>
-    <body class="hatter_login">
-    <form action="register.php" method="POST">
-        <div class="vid-container">
+     <body class="hatter_login">
+
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    	<div class="vid-container">
             <div class="inner-container">
                 <div class="box" name="reg_data">
-                    <h1>Register</h1>
-                    <span class="span_error"><p><?php echo "$error"; ?></p></span>
-                    <input type="text" name="username" placeholder="Username" pattern="[A-Za-z0-9 ]{4,}" title="Legalabb 4 karakteres legyen." required/>
-<!--                    (6-10 db, kisbetu is nagybetu is es szamjegye is legyen)-->
-                    <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,10}" title=" 6-10 db, kisbetu is nagybetu is es szamjegye is legyen." required/>
-                    <input type="password" id="password_again" name="password_again" placeholder="Password2" required/>
-                    <input type="text" name="firstname" placeholder="Firstnme" pattern="[a-zA-Z]{2,}" title="Csak betuket tartalmazhat, minimum 2 karakteres legyen." required />
-                    <input type="text" name="surname" placeholder="Surname"  pattern="[a-zA-Z]{2,}" title="Csak betuket tartalmazhat." required/>
+                     <h1>Register</h1>
+
+                     <input type="text" name="uname" placeholder="Username" required>
+                     <!-- <span class="error"><p><?php echo $unameErr; ?></p></span> -->
+
+					 <input type="password" id="password" name="password" placeholder="Password" required>
+					 <!-- <span class="error">* <?php echo $passwordErr; ?></span> -->
+
+					 <input type="password" id="password_again" name="password2" placeholder="Password2" required>
+					 <!-- <span class="error">* <?php echo $password2Err; ?></span> -->
+
+					 <input type="text" name="fname" id="fname", placeholder="Fist name" required>
+					 <!-- <span class="error">* <?php echo $fnameErr; ?></span> -->
+
+                    <input type="text" name="surname" placeholder="Surname" required>
+                    <!-- <span class="error">* <?php echo $surnameErr; ?></span> -->
+
                     <div>
                         <button type="submit" class="login_button">Register</button>
-                        <button onclick="goBack()" name="Mégsem" value="Mégsem" id="kuldes" class="register_button">Mégsem</button>
+                        <button onclick="goBack()" name="Mégsem" value="Mégsem" id="kuldes" class="register_button">Back</button>
                     </div>
+
                 </div>
             </div>
         </div>
-
     </form>
-    <script src="upload/js/jquery.min.js"></script>
-    <script src="upload/js/bootstrap.js"></script>
+
     </body>
+
     </html>
-
     <?php
-} else if (loggedin()) {
-    $admin_e = $_SESSION['admin'];
-    if ($admin_e != 0) {
-        header('Location:admin.php');
-        exit();
-    } else {
-        header('Location:index.php');
-        exit();
-    }
 }
-
-
 ?>
